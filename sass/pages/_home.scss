@@ -1,0 +1,100 @@
+.section-about {
+  background-color: $color-gray-light;
+  padding: 30rem 0;
+  margin-top: -10vh;
+}
+
+.section-skills,
+.section-links {
+  transform: skewY(-3deg);
+  margin-top: -6rem;
+  padding: 15rem 0;
+  background-image: linear-gradient(to bottom right, $color-primary-dark, $color-primary-light);
+
+  // sets the container back to normal rotation.
+  & > * {
+    transform: skewY(3deg);
+  }
+}
+
+.section-skills {
+  .skills-list {
+    color: $color-white;
+    font-size: 1.6rem;
+    columns: 2;
+    
+    & > li {
+      list-style: none;
+      padding: 0;
+    }
+    &__heading {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid $color-gray-light;
+    }
+    &__specifics {
+      // thumbs up, maybe use later for fun?
+      // list-style-type: "\1F44D";
+      list-style-type: "➜";
+      list-style-position: outside;
+    }
+    &__item {
+      margin-left: 3rem;
+      padding-left: .5rem;
+    }
+  }
+}
+
+.section-work {
+  font-size: 1.6rem;
+  background-color: $color-gray-light;
+  margin-top: -5.5rem;
+  padding: 20rem 0;
+  // TODO: SET A BACKGROUND IMAGE, MAKE WORK CONTAINER TRANSPARENT.
+}
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__card {
+    padding: 2rem;
+    margin: 2rem;
+    background-color: darken($color-gray-light, 2);
+    border: 1px solid darken($color-gray-light, 5);
+    border-radius: 5px;
+    max-width: 150rem;
+
+  }
+  &__info {
+    margin-bottom: 1rem;
+    h3 {
+      margin-bottom: 1rem;
+    }
+  }
+  &__dates {
+    font-style: italic;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  &__title {
+    padding-left: 1rem;
+    font-weight: bold;
+  }
+  &__description {
+    font-size: 1.6rem;
+
+  }
+  &__responsibilities {
+    list-style: none;
+  }
+  &__highlight {
+    margin: 1rem 1.5rem;
+  }
+}
+
+// rest of the styles for links section are up above with .section-skills.
+.section-links {
+  & .row > div {
+    text-align: center;
+  }
+}

@@ -1,0 +1,31 @@
+$color-primary: #262C3B;
+$color-primary-dark: darken($color: $color-primary, $amount: 5);
+$color-primary-light: #2E3445;
+$color-black: #000;
+$color-white: #fff;
+$color-gray-light: #eee;
+$color-gray-dark: #444549;
+
+// TYPOGRAPHY
+$font-lato: 'Lato', Arial, Helvetica, sans-serif;
+$font-lobster: 'Lobster', cursive;
+$heading-underline-dark: #bebebe;
+
+// DESIGN ELEMENTS
+$underline-header: 2px solid $color-gray-light;
+$underline-invis: 2px solid transparent;
+$underline-basic: 1px solid $color-gray-light;
+
+$navigation-underline: 5px solid $color-gray-light;
+
+// FONT
+$default-font-size: 1.6rem;
+
+// GRID
+$page-width: 200rem;
+$grid-width: 150rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+$border-radius: 3px;

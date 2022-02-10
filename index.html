@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Alex Sollman Dot Dev</title>
+</head>
+<body>
+  <nav class="navigation is-visible">
+    <div class="navigation__container">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a class="navigation__item-link" href="#about">about</a></li>
+        <li class="navigation__item"><a class="navigation__item-link" href="#skills">skills</a></li>
+        <li class="navigation__item"><a class="navigation__item-link" href="#work">work</a></li>
+        <li class="navigation__item"><a class="navigation__item-link" href="#links">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="main-container">
+    <header class="header">
+      <div class="header__portrait">
+        <img srcset="/img/pixel_alex_small.png 300w, /img/pixel_alex_med.png 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" class="header__img" src="/img/pixel_alex_med.png" alt="A pixelated portrait of the man, the myth, the legend Alex Sollman.">
+      </div>
+      <div class="header__name-content">
+        <h1 class="header__name">
+          <span class="header__first-name">Alexander</span>
+          <br>
+          <span class="header__last-name">Sollman</span>
+        </h1>
+      <div class="header__line"></div>
+      <ul class="header__skills-list">
+        <li class="header__skill">css</li>
+        <li class="header__skill">javscript</li>
+        <li class="header__skill">react.js</li>
+        <li class="header__skill">node.js</li>
+        <li class="header__skill">wordpress</li>
+      </ul>
+      </div>
+      
+      
+      <svg class="icon__code">
+        <use xlink:href="img/symbol-defs.svg#icon-code"></use>
+      </svg>
+    </header>
+    <main>
+      <section class="section-about" id="about">
+        <div class="row">
+          <div class="col-1-of-2">
+            <p class="fun-intro">Hey There</p>
+            <p class="paragraph">My name is Alex. I'm a <span class="current-age"></span> year old programmer located in Portland, Oregon. I specialize in JavaScript developemnt but like to consider myself a jack-of-all-trades. Besides coding, I enjoy playing video games, cooking, hiking, and playing board games.</p>
+            <p class="paragraph">If you'd like to work together, feel free to drop me a line through any of my links below, and download my resume. Thanks for taking the time to look over my portfolio and I hope to hear from you soon :)</p>
+
+            <a href="/public/Resume.pdf" class="btn btn__download" target="_blank" rel="noopener noreferrer"><span class="btn__text">download resume</span></a>
+          </div>
+          <div class="col-1-of-2"></div>
+        </div>
+      </section>
+      <section class="section-skills" id="skills">
+        <h2 class="heading-secondary heading-secondary--light">Skills</h2>
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary heading-tertiary--light">Programming</h3>
+            <ul class="skills-list">
+              <li class="skills-list__heading">CSS/HTML</li>
+              <li>
+                <ul class="skills-list__specifics">
+                  <li class="skills-list__item">CSS3</li>
+                  <li class="skills-list__item">Flexbox and CSS Grid experience</li>
+                  <li class="skills-list__item">Responsive Web Design</li>
+                  <li class="skills-list__item">Bootstrap</li>
+                  <li class="skills-list__item">Sass</li>
+                  <li class="skills-list__item">Less</li>
+                  <li class="skills-list__item">Semantic and Accessible HTML5</li>
+                </ul>
+              </li>
+              <li class="skills-list__heading">JavaScript</li>
+             <li>
+                <ul class="skills-list__specifics">
+                  <li class="skills-list__item">Latest ES6 standard JavaScript</li>
+                  <li class="skills-list__item">jQuery</li>
+                  <li class="skills-list__item">Node.js</li>
+                  <li class="skills-list__item">Express.JS</li>
+                  <li class="skills-list__item">React.js</li>
+                  <li class="skills-list__item">Bootstrap</li>
+                  <li class="skills-list__item">NPM</li>
+                  <li class="skills-list__item">Minor Vue.js experience</li>
+                </ul>
+              </li>
+              <li class="skills-list__heading">PHP</li>
+              <li>
+                <ul class="skills-list__specifics">
+                  <li class="skills-list__item">CodeIgniter</li>
+                  <li class="skills-list__item">Wordpress</li>
+                </ul>
+              </li>
+              <li class="skills-list__heading">Mobile Development</li>
+              <li>
+                <ul class="skills-list__specifics">
+                  <li class="skills-list__item">Minor Dart/Flutter experience</li>
+                  <li class="skills-list__item">Minor React Native experience</li>
+                </ul>
+              </li>
+              <li class="skills-list__heading">Database Services</li>
+              <li>
+                <ul class="skills-list__specifics">
+                  <li class="skills-list__item">ElasticSearch</li>
+                  <li class="skills-list__item">MongoDB</li>
+                  <li class="skills-list__item">MySQL</li>
+                  <li class="skills-list__item">AWS and DynamoDB</li>
+                </ul>
+              </li>
+              <li class="skills-list__heading">Misc. programming</li>
+              <li>
+                <ul class="skills-list__specifics">
+                  <li class="skills-list__item">Minor Python/Django experience</li>
+                  <li class="skills-list__item">Extensive Git experience</li>
+                  <li class="skills-list__item">Docker</li>
+                  <li class="skills-list__item">RESTful APIs</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary heading-tertiary--light">Development and Design Tools</h3>
+            <ul class="skills-list">
+              <li class="skills-list__heading">Design</li>
+              <li>
+                <ul class="skills-list__specifics">
+                  <li class="skills-list__item">Figma</li>
+                  <li class="skills-list__item">Adobe XD</li>
+                  <li class="skills-list__item">Adobe Photoshop</li>
+                  <li class="skills-list__item">Adobe Illustrator</li>
+                </ul>
+              </li>
+              <li class="skills-list__heading">Operating Systems</li>
+             <li>
+                <ul class="skills-list__specifics">
+                  <li class="skills-list__item">Linux (Arch/Manjaro mainly)</li>
+                  <li class="skills-list__item">MacOS</li>
+                  <li class="skills-list__item">Windows</li>
+                  <li class="skills-list__item">Extensive knowledge of the linux/mac command line and tools</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section-work" id="work">
+        <h2 class="heading-secondary heading-secondary--dark">Work</h2>
+        <div class="work">
+          <div class="work__card">
+          <div class="work__info">
+            <h3 class="work__company heading-tertiary"><a href="https://www.usamm.com" class="outside-link" target="_blank" rel="noopener noreferrer">USAMM</a> / <a href="https://ezrackbuilder.usamm.com" class="outside-link" target="_blank" rel="noopener noreferrer">EZRackBuilder</a></h3>
+            <span class="work__dates">Oct. 2010 - Oct. 2021</span>
+            <span class="work__title">Lead Frontend Developer</span>
+          </div>
+          <div class="work__description">
+            <ul class="work__responsibilities">
+              <li class="work__highlight">
+                Responsible for identifying, delegating, and fixing issues on multiple websites
+              </li>
+              <li class="work__highlight">
+                Responsible for developing new web applications for the EZRackBuilder
+              </li>
+              <li class="work__highlight">
+                I maintained and developed new features and tools for multiple internal applications such as inventory forecasting tools, and tools for tracking sales from over 100 physical touch screen kiosks.
+              </li>
+              <li class="work__highlight">
+                Collaborated with designers to optimize the user experience in all our web applications.
+              </li>
+              <li class="work__highlight">
+                Worked with multiple complex APIs to accurately display and transfer dataacross multiple platforms.
+              </li>
+              <li class="work__highlight">
+                Built, installed, and provided technical support for all our touch screen kiosks around the world.
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section class="section-links" id="links">
+        <h2 class="heading-secondary heading-secondary--light">Contact Links</h2>
+        <div class="row">
+          <div class="col-1-of-3">
+            <a href="https://www.twitter.com/pix0id" class="btn btn__contact-link" target="_blank" rel="noopener noreferrer">
+              <span class="btn__visible">
+                <svg class="icon__contact-link">
+                  <use xlink:href="img/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </span>
+              <span class="btn__invisible">Twitter</span>
+            </a>
+            <a href="https://www.linkedin.com/in/alexsollman/" class="btn btn__contact-link" target="_blank" rel="noopener noreferrer">
+              <span class="btn__visible">
+                <svg class="icon__contact-link">
+                  <use xlink:href="img/symbol-defs.svg#icon-linkedin2"></use>
+                </svg>
+              </span>
+              <span class="btn__invisible">LinkedIN</span>
+            </a>
+          </div>
+          <div class="col-1-of-3">
+            <a href="https://www.github.com/pix0id" class="btn btn__contact-link" target="_blank" rel="noopener noreferrer">
+              <span class="btn__visible">
+                <svg class="icon__contact-link">
+                  <use xlink:href="img/symbol-defs.svg#icon-github"></use>
+                </svg>
+              </span>
+              <span class="btn__invisible">Github</span>
+            </a>
+            <a href="https://stackoverflow.com/users/2466926/alex-sollman" class="btn btn__contact-link" target="_blank" rel="noopener noreferrer">
+              <span class="btn__visible">
+                <svg class="icon__contact-link">
+                  <use xlink:href="img/symbol-defs.svg#icon-stackoverflow"></use>
+                </svg>
+              </span>
+              <span class="btn__invisible">Stack Overflow</span>
+            </a>
+          </div>
+          <div class="col-1-of-3">
+            <a href="https://codepen.io/pix0id" class="btn btn__contact-link" target="_blank" rel="noopener noreferrer">
+              <span class="btn__visible">
+                <svg class="icon__contact-link">
+                  <use xlink:href="img/symbol-defs.svg#icon-codepen"></use>
+                </svg>
+              </span>
+              <span class="btn__invisible">Codepen</span>
+            </a>
+            <a href="mailto:alex@alexsollman.dev" class="btn btn__contact-link">
+              <span class="btn__visible">
+                <svg class="icon__contact-link">
+                  <use xlink:href="img/symbol-defs.svg#icon-mail"></use>
+                </svg>
+              </span>
+              <span class="btn__invisible">email</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__credit">Made with <span class="footer__heart">&#9829;</span> by Alex Sollman. &copy; <span class="current-year"></span> all rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+.header {
+  z-index: 1;
+  display: flex;
+  position: inherit;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 85vh;
+  line-height: 1;
+  padding: 5rem;
+  overflow: hidden;
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary);
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    height: 95vh;
+  }
+
+  .name-content {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+  }
+  .icon__code {
+    z-index: 1;
+    height: 275rem;
+    width: 275rem;
+    position: absolute;
+    right: 10rem;
+    opacity: .25;
+    fill: darken($color:  $color-gray-light, $amount: 40)
+  }
+
+  &__portrait {
+    z-index: 4;
+    border-radius: 50%;
+    border: .7rem solid $color-black;
+    height: 25rem;
+    width: 25rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: darken($color: $color-gray-light, $amount: 20);
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 3;
+      border-radius: 50%;
+      top: -.5rem;
+      left: -.5rem;
+      right: -.5rem;
+      bottom: -.5rem;
+      border: 1.5rem solid $color-gray-light;
+    }
+  }
+
+  &__img {
+    z-index: 2;
+    width: 100%;
+  }
+  &__name {
+    font-weight: 300;
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: $color-gray-light;
+
+    // this is needed to get the first / last name animations to work properly.
+    & > * {
+      display: inline-block;
+    }
+
+  }
+
+  &__first-name {
+    animation: moveInLeft 1s ease-out;
+  }
+
+  &__last-name {
+    animation: moveInRight 1s ease-out;
+  }
+
+  &__line {
+    width: 100%;
+    margin: 2rem 0;
+    border-bottom: $underline-header;
+    animation: underline 1s forwards 1s;
+    transform: scaleX(0);
+  }
+
+  &__skills-list {
+    color: $color-gray-light;
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__skill {
+    opacity: 0;
+    animation: slideUpVisible 1s forwards;
+
+    &:nth-child(1) {
+      animation-delay: 1.5s;
+    }
+    &:nth-child(2) {
+      animation-delay: 2s;
+    }
+    &:nth-child(3) {
+      animation-delay: 2.5s;
+    }
+    &:nth-child(4) {
+      animation-delay: 3s;
+    }
+    &:nth-child(5) {
+      animation-delay: 3.5s;
+    }
+  }
+}

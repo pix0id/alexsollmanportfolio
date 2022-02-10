@@ -1,0 +1,83 @@
+.btn {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  background-color: orangered;
+  color: $color-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+
+  &__contact-link {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: $border-radius;
+    border: none;
+    position: relative;
+    background-color: orangered;
+    width: 100%;
+    max-width: 30rem;
+    text-align: center;
+    color: $color-white;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  & > * {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    transition: all .2s;
+  }
+
+  &__visible {
+    padding: 2rem 7.5rem;
+  }
+
+  &__invisible {
+    display: inline-block;
+    position: absolute;
+    padding: 2rem 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: -100%;
+  }
+
+  .icon__contact-link {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-white;
+  }
+  
+  &:hover &__visible{
+    transform: translateY(100%);
+  }
+
+  &:hover &__invisible {
+    top: 0;
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+.btn__download {
+  border-radius: $border-radius;
+  
+  svg {
+      width: 2rem;
+      height: 2rem;
+      position: relative;
+      top: .2rem;
+      margin-right: .8rem;
+      fill: $color-white;
+    }
+}
