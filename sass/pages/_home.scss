@@ -123,7 +123,7 @@
   & .row > div {
     text-align: center;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       margin-bottom: 0 !important;
     }
   }
