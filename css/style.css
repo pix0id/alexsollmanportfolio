@@ -217,6 +217,28 @@ body {
     margin-right: .8rem;
     fill: #fff; }
 
+.card {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  @media only screen and (max-width: 56.25em) {
+    .card {
+      padding: 2rem; } }
+  .card__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block; }
+    @media only screen and (max-width: 56.25em) {
+      .card__icon {
+        margin-bottom: 0; } }
+  .card:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+
 .footer {
   display: flex;
   justify-content: flex-end;
@@ -428,23 +450,32 @@ body {
   .section-links > * {
     transform: skewY(3deg); }
 
-.section-skills .skills-list {
-  color: #fff;
-  font-size: 1.6rem;
-  columns: 2; }
-  .section-skills .skills-list > li {
-    list-style: none;
-    padding: 0; }
-  .section-skills .skills-list__heading {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #eee; }
-  .section-skills .skills-list__specifics {
-    list-style-type: "➜";
-    list-style-position: outside; }
-  .section-skills .skills-list__item {
-    margin-left: 3rem;
-    padding-left: .5rem; }
+.section-skills {
+  /* .skills-list {
+    color: $color-white;
+    font-size: 1.6rem;
+    columns: 2;
+    
+    & > li {
+      list-style: none;
+      padding: 0;
+    }
+    &__heading {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid $color-gray-light;
+    }
+    &__specifics {
+      // thumbs up, maybe use later for fun?
+      // list-style-type: "\1F44D";
+      list-style-type: "➜";
+      list-style-position: outside;
+    }
+    &__item {
+      margin-left: 3rem;
+      padding-left: .5rem;
+    }
+  } */ }
 
 .section-work {
   font-size: 1.6rem;
