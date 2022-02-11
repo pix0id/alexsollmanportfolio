@@ -10,6 +10,15 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    width: 90rem;
+
+    @media (max-width: 1400px) {
+      width: 70rem;
+    }
+
+    @include respond(tab-land) {
+      width: 45rem;
+    }
   }
 }
 .section-skills,
@@ -28,9 +37,9 @@
 }
 
 .section-skills {
-  background-image: url('/img/pipes.jpg');
+  /* background-image: url('/img/pipes.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   /* .skills-list {
     color: $color-white;
     font-size: 1.6rem;
@@ -76,11 +85,10 @@
   &__card {
     padding: 2rem;
     margin: 2rem;
-    color: $color-gray-light;
-    background-color: rgba(darken($color-gray-light, 2), .3);
+    color: $color-black;
+    background-color: rgba($color-white, .3);
     border-radius: $border-radius;
     max-width: 150rem;
-    backdrop-filter: blur(4px);
     box-shadow: 0 3px 3px rgba($color-black, .3);
   }
   &__info {
@@ -114,5 +122,9 @@
 .section-links {
   & .row > div {
     text-align: center;
+
+    @include respond(tab-port) {
+      margin-bottom: 0 !important;
+    }
   }
 }

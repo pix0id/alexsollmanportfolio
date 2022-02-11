@@ -24,10 +24,9 @@
   }
   .icon__code {
     z-index: 1;
-    height: 275rem;
-    width: 275rem;
+    height: 175rem;
+    width: 175rem;
     position: absolute;
-    right: 10rem;
     opacity: .25;
     fill: darken($color:  $color-gray-light, $amount: 40)
   }
@@ -66,6 +65,9 @@
     font-size: 10rem;
     text-transform: uppercase;
     color: $color-gray-light;
+    @include respond(tab-port) {
+      font-size: 7rem;
+    }
 
     // this is needed to get the first / last name animations to work properly.
     & > * {
@@ -99,6 +101,10 @@
     justify-content: space-between;
     text-transform: uppercase;
     font-weight: 700;
+
+    @include respond(tab-port) {
+      font-size: 1.7rem;
+    }
   }
 
   &__skill {
