@@ -143,13 +143,10 @@ body {
 .outside-link:link,
 .outside-link:visited {
   font-size: inherit;
-  color: #444549;
+  color: #fff;
   text-decoration: none;
   padding: .2rem .5rem;
   transition: all .2s; }
-  .outside-link:link::after,
-  .outside-link:visited::after {
-    content: "\1F517"; }
   .outside-link:link:hover,
   .outside-link:visited:hover {
     color: #fff;
@@ -305,9 +302,9 @@ body {
     flex: 1 1 calc(3 * ((100% - 3 * 6rem) / 4) + (2 * 6rem)); }
 
 .header {
-  z-index: 1;
   display: flex;
-  position: inherit;
+  z-index: 1;
+  position: relative;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -446,12 +443,20 @@ body {
   transform: translateY(-100%); }
 
 .section-about {
+  position: relative;
   background-color: #eee;
   padding: 30rem 0;
   margin-top: -10vh; }
 
+.about__img {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
 .section-skills,
 .section-links {
+  position: relative;
+  z-index: 1;
   transform: skewY(-3deg);
   margin-top: -6rem;
   padding: 15rem 0;
@@ -461,6 +466,9 @@ body {
     transform: skewY(3deg); }
 
 .section-skills {
+  background-image: url("/img/pipes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   /* .skills-list {
     color: $color-white;
     font-size: 1.6rem;
@@ -488,6 +496,7 @@ body {
   } */ }
 
 .section-work {
+  position: relative;
   font-size: 1.6rem;
   background-color: #eee;
   margin-top: -5.5rem;
@@ -503,10 +512,12 @@ body {
   .work__card {
     padding: 2rem;
     margin: 2rem;
-    background-color: #e9e9e9;
-    border: 1px solid #e1e1e1;
-    border-radius: 5px;
-    max-width: 150rem; }
+    color: #eee;
+    background-color: rgba(233, 233, 233, 0.3);
+    border-radius: 3px;
+    max-width: 150rem;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3); }
   .work__info {
     margin-bottom: 1rem; }
     .work__info h3 {
