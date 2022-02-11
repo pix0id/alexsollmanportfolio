@@ -50,8 +50,11 @@
   background-color: $color-gray-light;
   margin-top: -5.5rem;
   padding: 20rem 0;
-  // TODO: SET A BACKGROUND IMAGE, MAKE WORK CONTAINER TRANSPARENT.
+  background-image: linear-gradient(to bottom right, rgba($color-primary-dark, .85), rgba($color-primary-light, .85)), url('/img/working_image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 .work {
   display: flex;
   flex-direction: column;

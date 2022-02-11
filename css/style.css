@@ -88,18 +88,17 @@ body {
   color: #444549; }
 
 .heading-secondary {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 400;
   font-family: "Lato", Arial, Helvetica, sans-serif;
-  border-bottom: 2px solid #444549;
   display: block;
   max-width: 150rem;
-  margin: 0 auto 3rem auto; }
-  .heading-secondary--dark {
-    color: #444549;
-    border-bottom: 2px solid #bebebe; }
-  .heading-secondary--light {
-    color: #eee; }
+  margin: 0 auto 3rem auto;
+  color: #eee;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  padding: .5rem 3rem;
+  text-transform: uppercase; }
 
 .heading-tertiary {
   font-size: 3rem;
@@ -116,24 +115,26 @@ body {
     color: #eee;
     border-bottom: 1px solid #eee; }
 
-.fun-intro {
+/* .fun-intro {
   font-size: 4rem;
   font-weight: 700;
-  font-family: "Lobster", cursive;
-  background-image: linear-gradient(to right, #2E3445, #262C3B);
+  font-family: $font-lobster;
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary);
   display: inline-block;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
-  transform: skewX(-12deg); }
-  @media only screen and (max-width: 56.25em) {
-    .fun-intro {
-      font-size: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .fun-intro {
-      font-size: 2.5rem; } }
+  transform: skewX(-12deg);
 
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+} */
 .paragraph {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
@@ -153,6 +154,15 @@ body {
   .outside-link:visited:hover {
     color: #fff;
     background-color: #262C3B; }
+
+.blur {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  backdrop-filter: blur(4px); }
 
 .btn {
   display: inline-block;
@@ -481,7 +491,10 @@ body {
   font-size: 1.6rem;
   background-color: #eee;
   margin-top: -5.5rem;
-  padding: 20rem 0; }
+  padding: 20rem 0;
+  background-image: linear-gradient(to bottom right, rgba(28, 32, 43, 0.85), rgba(46, 52, 69, 0.85)), url("/img/working_image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .work {
   display: flex;
