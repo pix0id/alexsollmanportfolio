@@ -54,7 +54,7 @@
   &__card {
     padding: 2rem;
     margin: 2rem;
-    color: $color-black;
+    color: $color-white;
     background-color: rgba($color-white, .3);
     border-radius: $border-radius;
     max-width: 150rem;
@@ -63,7 +63,7 @@
   &__info {
     margin-bottom: 1rem;
     h3 {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
   }
   &__dates {
@@ -81,6 +81,7 @@
   }
   &__responsibilities {
     list-style: none;
+    color: $color-white;
   }
   &__highlight {
     margin: 1rem 1.5rem;
