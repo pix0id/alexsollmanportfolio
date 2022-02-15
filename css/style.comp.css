@@ -572,7 +572,8 @@ body {
     color: #fff;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 3px;
-    max-width: 150rem;
+    width: 100%;
+    max-width: 100rem;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3); }
   .work__info {
     margin-bottom: 1rem; }
